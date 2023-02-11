@@ -14,19 +14,26 @@ const linking: LinkingOptions<RootStackParamList> = {
   config: {
     screens: {
       Root: {
+        initialRouteName: 'Beranda',
         screens: {
-          TabOne: {
+          PrayerTime: {
             screens: {
-              TabOneScreen: 'one',
+              PrayerTimeScreen: 'prayer-time'
+            }
+          },
+          Beranda: {
+            screens: {
+              BerandaScreen: 'beranda',
             },
           },
-          TabTwo: {
+          Chat: {
             screens: {
-              TabTwoScreen: 'two',
+              ChatScreen: 'chat',
             },
           },
         },
       },
+      Surah: 'surah-detail:id',
       Modal: 'modal',
       NotFound: '*',
     },
